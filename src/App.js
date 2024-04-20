@@ -1,4 +1,4 @@
-import { children, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import StarRating from "./StarRating.js";
 
 const average = (arr) =>
