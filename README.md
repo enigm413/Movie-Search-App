@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Movie Search Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Introduction
 
-## Available Scripts
+This document provides an overview of the Movie Search and Tracking Application, a React-based web application that allows users to search for movies using the OMDB API, view movie details, and track watched movies along with their ratings.
 
-In the project directory, you can run:
+### Components Overview
 
-### `npm start`
+The application consists of several components that work together to provide the desired functionality:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **App Component:** The main component that manages the application state, handles API requests, and renders other components based on the state.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **NavBar Component:** Renders the navigation bar with a logo and search input for movie search.
 
-### `npm test`
+- **ErrorMessage Component:** Displays error messages if any API requests fail.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Loader Component:** Displays a loading indicator while fetching data from the API.
 
-### `npm run build`
+- **Search Component:** Renders an input field for users to search for movies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Logo Component:** Displays the application logo and title.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **NumResult Component:** Shows the number of search results found.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Main Component:** Acts as the main content area where other components are rendered based on the application state.
 
-### `npm run eject`
+- **Container Component:** Wraps content in collapsible boxes with a toggle button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **MovieList Component:** Displays a list of movies based on the search results.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Movies Component:** Represents an individual movie item in the list with basic information like title, year, and poster.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **MovieDetails Component:** Displays detailed information about a selected movie, including ratings, plot, cast, and director. Allows users to add the movie to their watched list and rate it.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **WatchSummary Component:** Provides a summary of watched movies, including average ratings and runtime.
 
-## Learn More
+- **WatchedList Component:** Displays a list of watched movies with options to delete them.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **WatchedMovies Component:** Represents an individual watched movie item with details such as rating, poster, and runtime.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Features
 
-### Code Splitting
+- Search for movies using the OMDB API.
+- View detailed information about each movie, including ratings and plot.
+- Add movies to a watched list and rate them.
+- View a summary of watched movies with average ratings and runtime.
+- Delete watched movies from the list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Usage
 
-### Analyzing the Bundle Size
+- Enter a movie title in the search input and press Enter to search.
+- Click on a movie to view detailed information.
+- Rate the movie and add it to your watched list if desired.
+- View your watched list and delete movies if needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### API Key
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application uses the OMDB API for movie data. Ensure you have a valid API key and replace the placeholder KEY variable in the code with your actual API key for proper functionality.
